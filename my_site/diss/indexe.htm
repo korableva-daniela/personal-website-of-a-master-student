@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstract of the dissertation by D.M. Korablev. A system for non‑contact interface control with personalization of gesture commands.</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand">
+            <span class="name"></span>
+           <span class="name">Korableva Daniela Mikhailovna</span>
+           <span class="role">Abstract of the master's thesis</span>
+        </div>
+        <div class="lang-switch">
+            <a href="index.htm">RU</a>
+            <a href="indexe.htm" class="active">EN</a>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="../index.htm">Biography</a>
+        <a href="index.htm" class="active">Abstract</a>
+        <a href="../library/index.htm">Library</a>
+        <a href="../links/index.htm">Links</a>
+        <a href="../links/zvit.htm">Search report</a>
+        <a href="../ind/index.htm">Individual section</a>
+        <a href="../eumk/index.htm">EUMC</a>
+    </div>
+</nav>
+
+<main class="main-container">
+
+    <h1>System for contactless interface control with personalization of gesture commands</h1>
+
+    <p><strong>Author:</strong> Korableva Daniela Mikhailovna</p>
+    <p><strong>Supervisor:</strong> Lukaschik Elena Pavlovna, Candidate of Physical and Mathematical Sciences, Associate Professor</p>
+
+  
+
+    <h2>Relevance of the topic</h2>
+<p>
+Traditional input devices — keyboard and mouse — remain the main ones 
+    the means of interaction with digital systems, however, they limit 
+    the naturalness and accessibility of interfaces. In a number of scenarios, when conducting 
+    presentations, work in sterile environments, equipment management on 
+    distance — the use of physical input devices is inconvenient 
+    or impossible. This leads to an increase in research in the field of contactless 
+    interfaces based on hand gesture recognition.
+</p>
+<p>
+According to scientometric analysis, the number of publications on speech recognition 
+    gestures based on convolutional neural networks for the period from 2020 to 2025 
+    demonstrates steady growth with an average annual rate of 8.45 % 
+    <a href="#ref2">[2]</a>. This indicates a high academic and 
+    the practical significance of the direction.
+</p>
+<p>
+One of the key problems of existing gesture recognition systems is 
+    individual variation of gesture execution. Different users perform 
+    the same gesture with different amplitude, speed and shape of the fingers, which reduces 
+    recognition accuracy. Research shows that personalized 
+    gesture sets that take into account the individual characteristics of the user, 
+    they provide higher accuracy and convenience compared to fixed 
+    sets <a href="#ref3">[3]</a>, <a href="#ref4">[4]</a>. In addition,
+support for custom personalization is considered important. 
+    the direction of development of modern human-machine interfaces 
+    <a href="#ref6">[6]</a>.
+</p>
+<p>
+Thus, the relevance of the work is determined by the need to create systems 
+    contactless control, able to adapt to individual 
+    user preferences without significant costs for retraining models.
+</p>
+
+<h2>Goals and objectives of the work</h2>
+<p><strong>Objective:</strong> to develop a contactless digital
+interface control system based on static hand gesture recognition, which provides
+personalization of gesture commands without retraining the model and stable operation
+in real-world operation.</p>
+<p><strong>Tasks:</strong></p>
+<ul>
+    <li>Analysis of modern hand gesture recognition methods and existing 
+        approaches to building contactless interface management systems 
+        <a href="#ref1">[1]</a>, <a href="#ref6">[6]</a>.</li>
+    <li>Development of a system architecture that includes hand area detection,
+gesture classification, unknown gesture detection, and a mechanism 
+        personalization of commands <a href="#ref3">[3]</a>.</li>
+<li>Implementation of a web platform for uploading user presentations and 
+        settings for individual gesture mapping to control commands.</li>
+    <li>Conducting a comparative analysis of fixed and personalized 
+        control modes based on accuracy, false alarms, and time metrics 
+        development <a href="#ref4">[4]</a>.</li>
+<li>Collection and analysis of statistical data on user preferences  when choosing gestures for various commands. </li>
+<li>Assessment of the system’s stability under real‑world operating conditions and  development of recommendations for its use <a href="#ref5">[5]</a>.</li>
+</ul>
+
+
+<h2>Scientific novelty</h2>
+<p>The scientific novelty of the work is as follows:</p>
+<ul>
+    <li>Reformulation of the problem of detecting unknown gestures in relation to 
+        towards the context of personalized management. It is considered unknown 
+        not only a gesture that is missing from the training sample, but also a gesture
+that is recognized by the model, but not assigned by the user to any of them. 
+        the team. This approach helps to reduce the number of false positives. 
+        without changing the model.</li>
+<li>Exploring user preferences when choosing gestures for commands 
+        Controls: collecting and analyzing data about which gestures users use 
+        they choose for specific commands which gestures demonstrate a higher 
+        recognition accuracy, and how these preferences correlate with subjective 
+        assessment of convenience.</li>
+<li>Comparative analysis of fixed and personalized modes 
+        management by metrics of accuracy, false alarms, delay and 
+        development time, which allows quantifying the effect 
+        personalization <a href="#ref4">[4]</a>.</li>
+<li>Development of a methodology for assessing the reliability of gesture control systems in 
+        in real-world conditions, including a set of metrics and their procedure 
+        measurements <a href="#ref5">[5]</a>.</li>
+</ul>
+
+<h2>Planned practical results</h2>
+<p>As a result of the work, it is planned to receive:</p>
+<ul>
+    <li>A Django-based web platform for uploading presentations, customizing 
+        gesture commands and slide show control using hand gestures.</li>
+    <li>A personalization module that allows the user to choose convenient options for 
+                commands <a href="#ref3">[3]</a>.</li>
+    <li>A two‑level mechanism for detecting unknown gestures, combining         the model’s uncertainty assessment (Shannon entropy, logits margin) and         checking whether a gesture belongs to the set of assigned commands.</li>
+    <li>A statistical module for collecting and analyzing data on user... 
+        preferences and reliability of the system.</li>
+    <li>Experimental data on the effect of personalization on accuracy and 
+        user-friendliness of management.</li>
+    <li>A publication on a research topic (abstracts or an article in a collection 
+        conferences).</li>
+</ul>
+
+<h2>Review of research and development on the topic</h2>
+
+<h3>Global level</h3>
+<p>
+In the global scientific community, research in the field of gesture recognition 
+    They have been actively developing since the early 2010s, covering a wide range of tasks — 
+    from static gesture classification to dynamic gesture recognition 
+    sequences and sign languages <a href="#ref1">[1]</a>, 
+    <a href="#ref6">[6]</a>. One of the largest datasets for 
+    Static gesture recognition is HaGRID (HAnd Gesture Recognition 
+    Image Dataset), containing more than 550,000 images from 37,583 subjects, 
+    taken in various lighting and background conditions <a href="#ref1">[1]</a>. 
+    Comparative studies show that convolutional-based models 
+    neural networks, including ResNet18, YOLO, and MobileNet, achieve at this stage 
+    the accuracy range is 98-99% <a href="#ref1">[1]</a>, which confirms: when 
+    If there is a high-quality dataset, the task of classifying static gestures is 
+    it can be solved with high accuracy.
+</p>
+Two approaches to gesture recognition prevail in the scientific literature.
+ 
+    The first one relies on classical machine learning methods (SVM,
+Random Forest) combined with MediaPipe to extract key points. 
+    hands <a href="#ref8">[8]</a>. The second uses deep neural networks — 
+    ResNet, EfficientNet, YOLO, Vision Transformer <a href="#ref10">[10]</a>, 
+    <a href="#ref11">[11]</a>. Research shows that deep models, 
+    Especially those pre-trained on ImageNet and those pre-trained on target data
+demonstrate a significant advantage over classical ones. 
+    algorithms <a href="#ref1">[1]</a>.
+</p>
+<p>
+A separate area of research is devoted to the personalization of gestures 
+    interfaces. Thus, the work of Szedel (2026) presents a personalized 
+    A CNN-based wrist and forearm gesture recognition system in which 
+    users can define their own gesture sets; validation 
+    The accuracy of the system was 0.92, which demonstrates a high potential. 
+    a personalized approach <a href="#ref3">[3]</a>. Study 
+    Wang et al. (2025) also confirms the effectiveness of personalization:
+the proposed system with training based on specific user data 
+    achieves fast convergence and satisfactory accuracy with less 
+    the size of the training sample <a href="#ref4">[4]</a>. The task of detection 
+    Unknown gestures (open-set recognition) is actively developing 
+    the direction <a href="#ref6">[6]</a>.
+</p>
+<p>
+Research in the field of human-machine interaction highlights 
+    the importance of taking into account ergonomic factors when designing gesture devices 
+    interfaces <a href="#ref7">[7]</a>. The well-known problem of midi gestures 
+    it is fatigue from holding your hands in the air for a long time. Works
+on accessibility show that simple gestures involving one 
+    fingers or one hand are perceived by users as more convenient and
+require less time to perform <a href="#ref5">[5]</a>, 
+    <a href="#ref7">[7]</a>. This justifies the need for personalization. 
+    as a means of adapting the interface to the physical capabilities of a particular 
+    the user.
+</p>
+
+<h3>National level</h3>
+<p>
+In Russia, research in the field of gesture recognition and gesture interfaces 
+    They are conducted in several scientific centers.
+</p>
+<p>
+<strong>Russian sign language.</strong> Significant contribution to the creation of 
+    datasets for RYE are provided by the Slovo project, which contains 20,400 videos with 1,000 gestures 
+    from 194 native speakers. Systems are being developed based on this dataset. 
+    dynamic gesture recognition. The Bukva dataset has also been created for 
+    the dactylic alphabet of RYE <a href="#ref9">[9]</a>. However, these datasets 
+    They are focused on video and dynamic gestures, which distinguishes them from static ones. 
+    the control gestures considered in this work.
+</p>
+<p>
+    <strong>Gesture interfaces for robotics.</strong> Study 
+    <a href="#ref8">[8]</a> presents a system for controlling a manipulator, 
+    which includes both static and dynamic gestures. The static part 
+    is implemented based on YOLO and MediaPipe with an accuracy of 93.9%, which 
+    demonstrates the applicability of static gestures for control tasks. This work can serve as a benchmark for comparative evaluation.
+</p>
+<p>
+    <strong>Assistive technologies.</strong> Japanese Study (2026) 
+    describes a project to develop a non-contact gesture interface for 
+    people with motor impairments who use affordable 3D cameras and 
+    allowing you to control information devices through movements 
+    preserved mobility of body parts <a href="#ref5">[5]</a>. This 
+    The direction is close to the motivation of personalization considered in this article. 
+    work.
+</p>
+
+<h3>Local Level (KubGU)</h3>
+<p>
+At Kuban State University, research in the field of 
+    Gesture recognition and human-machine interaction are evolving 
+    based on the Faculty of Computer Technology and Applied Mathematics. 
+    One of the first works was a student article by Tagintseva and Kovalenko M.S. 
+    (2019), in which hand gesture recognition is based on video sequences 
+    it was performed using classical SURF methods to extract features and 
+    k-means for classification; the claimed accuracy was 98 % 
+    </a>.
+</p>
+
+In 2025, the faculty established an Artificial Intelligence Center under the 
+    under the guidance of Anna Vladimirovna Kovalenko, Doctor of Technical Sciences — 
+    the only such center in the Krasnodar Territory, funded under the 
+    a federal project to train top specialists in the field of AI. Within the framework of 
+    The Center has launched a bachelor's degree program "Modern Machine Learning Methods 
+    education and Computer vision" (supervised by PhD Sergey Sinitsa),
+which includes in—depth training in neural network architectures,
+computer vision and pattern recognition. In 2026, the leading scientific 
+    AIRI employee Konstantin Ushenin taught an intensive course at the AI Center 
+    in computer vision — from basic methods to multimodal 
+    models.
+</p>
+<p>
+Thus, KubGU is at the stage of forming a research 
+    Bases: specialized infrastructure and educational programs have been created,
+and a full-fledged research school on gesture recognition is still in place. 
+    it is in the formative stages.
+</p>
+
+<h2>Own results</h2>
+<p>By the time the work on the abstract was completed, the following results had been obtained:</p>
+<ul>
+    <li>A static gesture recognition model based on 
+        ResNet18 architectures <a href="#ref10">[10]</a> using dataset 
+        HaGRID <a href="#ref1">[1]</a>. The model demonstrated a high 
+        accuracy of classification of target gestures.</li>
+    <li>Implemented a hand area detector based on ResNet18, trained on 
+        a dataset of 20,000 images that has achieved 99.75% accuracy. The detector 
+        allows you to detect the brush anywhere in the frame, which increases convenience. 
+        using the system.</li>
+    <li>A mechanism for detecting unknown gestures based on entropy has been developed 
+        Shannon and the logit reserve, as well as the model with
+the additional "unknown" class on the ASL Alphabet dataset. Further education 
+        It allowed us to maintain the accuracy of recognizing target gestures by about 98% and
+eliminate false positives on gestures that are not included in the training program. 
+        the selection.</li>
+<li>Fully local video stream processing is implemented without saving and 
+        data transfer, which ensures user privacy.</li>
+    <li>The system was tested in real conditions using 
+        the camera, which has confirmed stable operation regardless of the background and 
+        lighting.</li>
+</ul>
+
+<h2>Conclusion and prospects</h2>
+<p>
+As part of the master's thesis, a contactless communication system is being developed 
+    digital interface management based on static data recognition 
+    hand gestures and providing personalization of gesture commands. Assumed 
+    The scientific novelty is related to the reformulation of the problem of detecting unknowns. 
+    gestures in the context of personalized management, as well as with research 
+    user preferences and comparative analysis of fixed and 
+    personalized modes <a href="#ref3">[3]</a>, 
+    <a href="#ref4">[4]</a>.
+</p>
+The practical significance of the work lies in the creation of a web platform that allows users to control presentations through gestures.
+
+, 
+    by customizing the set of commands to suit your individual characteristics. 
+    It is assumed that personalization will reduce the number of false ones. 
+    to increase the user-friendliness without overfitting 
+    models <a href="#ref4">[4]</a>.
+</p>
+<p>
+    The research prospects include expanding the platform’s functionality 
+    (media player control, experimental cursor control mode), 
+    as well as adapting the approach for assistive technologies and other application 
+    scenarios <a href="#ref5">[5]</a>.
+</p>
+
+    <h2>References</h2>
+    <ol>
+      <li id="ref1">Do V.-D., Le V.-H., Do H.-S., Phan V.-N., Te T.-H. TQU-HG dataset and comparative study for hand gesture recognition of RGB-based images using deep learning // Indonesian Journal of Electrical Engineering and Computer Science. – 2024. – Vol. 34, No. 3. – P. 1603–1617.</li>
+<li id="ref2">Scientometric Insights into Gesture Recognition Research Using Convolutional Neural Networks and Edge AI // Springer. – 2025. – P. 1–15. DOI: 10.1007/978-3-032-22911-3_5.</li>
+<li id="ref3">Szedel J. Personalized Wrist–Forearm Static Gesture Recognition Using the Vicara Kai Controller and Convolutional Neural Network // Sensors. – 2026. – Vol. 26, No. 5. – P. 1700.</li>
+<li id="ref4">Wang J., Ivrissimtzis I., Li Z., Shi L. Hand gesture recognition for user-defined textual inputs and gestures // Universal Access in the Information Society. – 2025. – P. 1315–1329.</li>
+<li id="ref5">Gesture interface for people with motor disabilities // Journal of the Robotics Society of Japan. – 2026. – Vol. 44, No. 1. – P. 28–33.</li>
+<li id="ref6">Review on Techniques of Gesture Navigation Control // International Journal of Scientific Research in Engineering and Management. – 2026. – DOI: 10.55041/IJSREM56654.</li>
+<li id="ref7">Goldin‑Meadow, S. Thinking with Your Hands. The Amazing Science of How Gestures Shape Our Thoughts / S. Goldin-Meadow – Moscow: KoLibri, 2024 – 288 p., ISBN: 978-5-389-23828-2.</li>
+<li id="ref8">Ryumin, D.A. Approaches to Automatic Recognition of Gestural Information: Hardware and Methods: a scientific article / D.A. Ryumin, I.A. Kagirov. // “Manned Spaceflight” – 2021 – No. 3(40) – pp. 82–99.</li>
+<li id="ref9">Gesture language recognition using deep learning: official website. – URL: https://habr.com/ru/companies/otus/articles/686428/ (accessed: 04.05.2026).</li>
+<li id="ref10">ResNet model [Electronic resource]: official website. –URL: https://deepmachinelearning.ru/docs/Neural-networks/Convolutional-architectures/ResNet (accessed: 15.05.2026).</li>
+<li id="ref11">Lyusko, I.L. Deep Learning with TensorFlow, Keras and PyTorch: book / I.L. Lyusko. – Moscow: DMK Press, 2025.-702 p. ISBN: 978-5-93700-382-9</li>
+</ol>
+  <div class="notice">
+        <strong>Important note:</strong> When writing this abstract, the Master's degree 
+        The work has not been completed yet. Final completion: June 2027 
+        The full text of the work and materials on the topic can be obtained from the author  or their supervisor after the specified date. 
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>Personal website of a master’s student at Kuban State University</p>
+    <p>Krasnodar, 2026–2027 academic year</p>
+</footer>
+
+</body>
+</html>
